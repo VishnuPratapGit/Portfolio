@@ -1,5 +1,6 @@
 import Test from "./Test";
 import "./app.scss"
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <Sidebar />
     <section id="Home">
       <Navbar />
+      <Hero />
     </section>
     <section id="About">Section2</section>
     <section id="Skills">Section3</section>

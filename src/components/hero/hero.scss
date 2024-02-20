@@ -1,0 +1,67 @@
+.hero {
+  z-index: -1;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+
+  .wrapper {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      h2 {
+        font-size: 25px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
+      h1 {
+        font-size: 70px;
+      }
+      img {
+        width: 50px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      button {
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+      button:hover {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5%;
+    img {
+      height: 100%;
+    }
+  }
+
+  .slidingTextContainer {
+    font-size: 50vh;
+    position: absolute;
+    bottom: -80px;
+    color: #ffffff09;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+}
