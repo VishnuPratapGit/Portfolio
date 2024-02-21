@@ -1,5 +1,5 @@
 import "./hero.scss"
-import { mirrorEasing, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
 const textVariants = {
     initial: {
@@ -41,6 +41,9 @@ const sliderVariants = {
 const Hero = () => {
     return (
         <div className="hero">
+            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
+                Developer Programmer Backend Frontend
+            </motion.div>
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
                     <motion.h2 variants={textVariants}>VISHNU PRATAP SINGH</motion.h2>
@@ -52,9 +55,6 @@ const Hero = () => {
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
                 </motion.div>
             </div>
-            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                Developer Programmer Backend Frontend
-            </motion.div>
             <div className="imageContainer">
                 <img src="/hero.png" alt="heroImg" />
             </div>
