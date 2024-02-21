@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   justify-self: center;
-  background-color: white;
   color: black;
 
   .bg {
@@ -14,7 +13,7 @@
     left: 0;
     bottom: 0;
     width: 400px;
-    background: white;
+    background: whitesmoke;
 
     .links {
       position: absolute;
@@ -27,7 +26,8 @@
       gap: 20px;
 
       a {
-        font-size: 40px;
+        font-size: 30px;
+        font-family: "IBM Plex Mono", "DM Sans", sans-serif;
       }
     }
   }
